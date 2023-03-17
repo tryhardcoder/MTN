@@ -8,7 +8,6 @@
 
 struct Globs {
 
-    BumpAlloc scratchArena =    BumpAlloc(SCRATCH_ARENA_SIZE);
     BumpAlloc frameArena =      BumpAlloc(FRAME_ARENA_SIZE);
     BumpAlloc lifetimeArena =   BumpAlloc(LIFETIME_ARENA_SIZE);
 

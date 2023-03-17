@@ -68,7 +68,7 @@ void GLLog(GLenum source, GLenum type, GLuint id, GLenum severity, GLsizei lengt
 
     char pref[] = "[GL MESSAGE]: ";
     //                                 null terminator included in pref len, not msg len
-    char* str = ALLOC_ARR_BUMP(globs.scratchArena, sizeof(pref) + length + 16, char);
+    char* str = ALLOC_ARR_BUMP(globs.frameArena, sizeof(pref) + length + 16, char);
     strcpy(str, pref);
     strcat(str, message);
 

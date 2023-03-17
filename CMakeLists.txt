@@ -14,6 +14,8 @@ enable_testing()
 file(GLOB SOURCES
     src/*.h
     src/*.cpp
+    rendering/GL/*.h
+    rendering/GL/*.cpp
     )
 
 add_executable(MTN ${SOURCES})

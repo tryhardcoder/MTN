@@ -31,6 +31,7 @@ void initGLCtx();
 
 
 // swaps framebuffer and polls for input
+// updates shouldClose
 void updateWindow();
 
 

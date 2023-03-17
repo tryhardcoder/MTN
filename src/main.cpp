@@ -11,6 +11,8 @@
 #include "globals.h"
 #include "utils.h"
 
+#include "rendering/GL/Mesh.h"
+
 
 
 
@@ -31,7 +33,6 @@ int main(int, char**) {
 
 
         globs.frameArena.clear();
-        globs.scratchArena.clear();
 
         updateWindow();
     }
