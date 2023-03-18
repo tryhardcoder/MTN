@@ -10,6 +10,14 @@ typedef uint32_t u32;
 typedef uint16_t u16;
 typedef uint8_t u8;
 
+typedef uint64_t b64;
+typedef uint32_t b32;
+typedef uint16_t b16;
+typedef uint8_t b8;
+
 typedef u32 uint;
 
 #define MTN_XY(v) v.x, v.y
+
+
+

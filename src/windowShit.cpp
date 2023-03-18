@@ -18,10 +18,7 @@ void mouseButtonCallback(GLFWwindow* window, int button, int action, int mods) {
 }
 
 void windowSizeCallback(GLFWwindow* window, int w, int h) {
-
-    glfwGetFramebufferSize(window,
-        &globs.windowState.frameSize.x,
-        &globs.windowState.frameSize.y);
+    glfwGetFramebufferSize(window, MTN_XY(&globs.windowState.frameSize));
 }
 
 
@@ -61,6 +58,11 @@ void updateWindow() {
     glfwPollEvents();
     glfwSwapBuffers(globs.windowState.window);
 };
+
+
+
+
+
 
 
 

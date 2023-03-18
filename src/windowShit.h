@@ -13,7 +13,6 @@
 
 struct WindowState {
 
-
     // please don't fuck with this stuff, I feel like that shouldn't be too hard
     GLFWwindow* window = nullptr;
     bool shouldClose = false;
@@ -31,7 +30,7 @@ void initGLCtx();
 
 
 // swaps framebuffer and polls for input
-// updates shouldClose
+// updates shouldClose & framesize
 void updateWindow();
 
 

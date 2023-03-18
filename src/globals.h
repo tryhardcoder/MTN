@@ -10,6 +10,7 @@ struct Globs {
 
     BumpAlloc frameArena =      BumpAlloc(FRAME_ARENA_SIZE);
     BumpAlloc lifetimeArena =   BumpAlloc(LIFETIME_ARENA_SIZE);
+    BumpAlloc sceneResArena =   BumpAlloc(LIFETIME_ARENA_SIZE);
 
     WindowState windowState =   WindowState();
 };

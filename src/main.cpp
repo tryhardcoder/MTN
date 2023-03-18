@@ -11,8 +11,7 @@
 #include "globals.h"
 #include "utils.h"
 
-#include "rendering/GL/Mesh.h"
-
+#include "game/Entity.h"
 
 
 
@@ -21,15 +20,15 @@ Globs globs = Globs();
 int main(int, char**) {
 
     initWindow();
+
     while(!globs.windowState.shouldClose) {
 
         glViewport(0, 0, MTN_XY(globs.windowState.frameSize));
 
+
         float x = (float)(std::sin(glfwGetTime()) + 1) / 2;
         glClearColor(x, x, x, x);
-
         glClear(GL_COLOR_BUFFER_BIT);
-
 
 
         globs.frameArena.clear();

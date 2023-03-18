@@ -11,11 +11,9 @@ enable_testing()
 
 # MAKE PROJECT SETTINGS ==================================================
 
-file(GLOB SOURCES
+file(GLOB_RECURSE SOURCES
     src/*.h
     src/*.cpp
-    rendering/GL/*.h
-    rendering/GL/*.cpp
     )
 
 add_executable(MTN ${SOURCES})

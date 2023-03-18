@@ -1,0 +1,34 @@
+
+
+[ ] Unit test pool alloc
+[ ] Unit test bump alloc
+[ ] Research physics arc
+[ ] GFX queue system
+
+
+
+// How do you replace macro defs from CMAKE?
+// how are libs substituted with diff configs?
+[ ] Better debug/release mode arc
+[ ] Better x64 vs x86 arc
+
+
+
+
+Current plan:
+
+For Rendering:
+implement a GL api, keeping some sort of arc to make it generic
+(not a good plan, I know)
+
+    Step 1: fill out very basic GL API funcs
+    Step 2: Get a mesh drawing
+  Step 2.5: VAOS PLEASE LORD ITS BEEN LIKE A YEAR
+    Step 3: Better render targets
+    Step 4: Better textures
+    Step ?: better uniforms (with type info, preferrably)
+
+    Step ?: Research and add a DirectX api
+
+For Physics:
+    Step 1: ??????????
