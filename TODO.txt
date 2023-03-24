@@ -2,6 +2,7 @@
 
 [ ] Unit test pool alloc
 [ ] Unit test bump alloc
+[ ] Unit test texture
 [ ] Research physics arc
 [ ] GFX queue system
 

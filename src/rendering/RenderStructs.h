@@ -24,6 +24,16 @@ enum class IMAGE_LAYOUT {
     F1DEPTH
 };
 
+enum class TEXTURE_FILTER_MODE {
+    LINEAR,
+    NEAREST
+};
+
+enum class TEXTURE_WRAP_MODE {
+    CLAMP_TO_EDGE,
+    REPEAT
+};
+
 
 
 
@@ -38,7 +48,7 @@ struct VertexBuffer {
     char* data = nullptr;
     GEO_LAYOUT_MEMBER* layout = nullptr;
 
-    // CLEANUP: are VAOS gl only?
+    // RES: are VAOS gl only?
     u32 VAORenderID = 0;
 };
 
@@ -52,13 +62,23 @@ struct RenderTarget {
     IMAGE_LAYOUT* attachedLayouts = nullptr;
 };
 
-struct Texture {
-    u32 renderID = 0;
-    char* srcPath = nullptr;
-    u32 width = 0;
-    u32 height = 0;
-    void* data = nullptr;
+struct Texture2d {
+
+    int channels = 0;
+    int width = 0;
+    int height = 0;
+    byte* data = nullptr;
     IMAGE_LAYOUT layout = IMAGE_LAYOUT::F1COLOR;
+    u32 renderID = 0;
+
+    //CLEANUP: both are purely metadata, consider removing?
+    char* srcPath = nullptr;
+    int fileChannels = 0;
+
+    void load(Texture2d* tex, const char& src, int channelCount,
+    TEXTURE_FILTER_MODE filter, TEXTURE_WRAP_MODE wrap);
+
+    void bind();
 };
 
 struct Shader {

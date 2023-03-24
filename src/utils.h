@@ -17,6 +17,8 @@ typedef uint8_t b8;
 
 typedef u32 uint;
 
+typedef u8 byte;
+
 #define MTN_XY(v) v.x, v.y
 
 

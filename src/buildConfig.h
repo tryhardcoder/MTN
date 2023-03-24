@@ -5,6 +5,7 @@
 #include <iostream>
 
 // define DEBUG for anything you only want in debug mode
+// TODO: hook into cmake
 #define DEBUG
 
 // Render API def
