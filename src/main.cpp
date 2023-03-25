@@ -4,7 +4,7 @@
 #include <assert.h>
 
 #define GLFW_INCLUDE_NONE
-#include "external/GLFW/glfw3.h"
+#include "external/GLFW/include/GLFW/glfw3.h"
 #include "external/GLAD/gl.h"
 
 #include "windowShit.h"

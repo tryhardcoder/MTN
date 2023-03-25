@@ -29,7 +29,9 @@ include_directories(external/)
 
 add_library(LibsModule external/GLAD/gl.c)
 
-target_link_libraries(LibsModule ${PROJECT_SOURCE_DIR}/external/GLFW/glfw3.lib)
+add_subdirectory(external/GLFW)
+include_directories(external/GLFW/include)
+target_link_libraries(LibsModule glfw ${GLFW_LIBRARIES})
 
 add_subdirectory(external/glm)
 target_link_libraries(LibsModule glm)

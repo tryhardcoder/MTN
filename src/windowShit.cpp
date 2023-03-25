@@ -1,7 +1,7 @@
 #include "buildConfig.h"
 #include "windowShit.h"
 #include "globals.h"
-
+#include <cstring>
 
 
 
