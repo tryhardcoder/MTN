@@ -2,12 +2,17 @@
 
 #include "buildConfig.h"
 #include "utils.h"
-#include "Render.h"
+#include "RenderStructs.h"
+#include "memory.h"
 
 
 // res management
 // void createRenderTarget();
-void createTexture(const char& src);
+void createTexture2d(
+    Texture2d* tex, const char& src,
+    TEXTURE_FILTER_MODE filter, TEXTURE_WRAP_MODE wrap,
+    BumpAlloc* resourceBuff);
+
 
 // bindings
 void setRenderTarget();
